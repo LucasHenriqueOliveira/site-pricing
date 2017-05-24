@@ -3,6 +3,21 @@
   "scripts": {
   },
   "env": {
+    "API_PREFIX": {
+      "required": true
+    },
+    "APP_DEBUG": {
+      "required": true
+    },
+    "APP_ENV": {
+      "required": true
+    },
+    "APP_KEY": {
+      "required": true
+    },
+    "APP_TIMEZONE": {
+      "required": true
+    }
   },
   "formation": {
   },
