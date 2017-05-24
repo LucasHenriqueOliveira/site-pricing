@@ -1,0 +1,44 @@
+{
+  "name": "PublisherDesk",
+  "require": {
+    "php": ">=7.0.1",
+    "laravel/lumen-framework": "5.3.*",
+    "vlucas/phpdotenv": "^2.4",
+    "krisanalfa/lumen-dingo-adapter": "^0.0.2",
+    "guzzlehttp/guzzle": "^6.2",
+    "paquettg/php-html-parser": "^1.7",
+    "flipbox/lumen-generator": "^5.3",
+    "google/apiclient": "^2.0",
+    "php-imap/php-imap": "^2.0",
+    "googleads/googleads-php-lib": "^25.4",
+    "ext-imap": "*",
+    "PHPOffice/PhpSpreadsheet": "dev-master"
+  },
+  "require-dev": {
+    "fzaninotto/faker": "~1.4",
+    "phpunit/phpunit": "~5.0",
+    "mockery/mockery": "~0.9",
+    "heroku/heroku-buildpack-php": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests/",
+      "database/"
+    ]
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "php -r \"copy('.env.example', '.env');\""
+    ],
+    "post-install-cmd": [
+      "touch storage/logs/lumen.log"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
