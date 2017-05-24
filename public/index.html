@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-locale="en-US" ng-app="app">
+<head>
+    <title>Pricing</title>
+    <meta name="author" content="AE">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- output_css "core" -->
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="full_bleed" ng-controller="appController">
+
+
+<div id="page" >
+    <div id="page_contents">
+        <section class="intro" id="top">
+            <div class="col margin_auto float_none align_center bottom_padding no_right_padding pricing_header">
+                <h1 class="large align_center">Pricing Guide</h1>
+            </div>
+        </section>
+
+        <div class="pricing_tabs">
+            <div id="tabmenu" class="tab_menu">
+                <h1 class="align_center show_on_mobile pricing_page_header">Pricing Guide</h1>
+                <button class="tab tab_teams active" href="#slack-for-teams" data-tab-name="tab_teams" >
+                    <h2 class="pricing_tab_menu_header">Slack <span class="mobile_break">for Teams</span></h2>
+                </button>
+                <button class="tab tab_enterprise " href="#enterprise-grid" data-tab-name="tab_enterprise" >
+                    <h2 class="pricing_tab_menu_header">Slack <span class="mobile_break">Enterprise Grid</span></h2>
+                </button>
+            </div>
+
+            <div class="tab_panels">
+                <div class="panel panel_teams active" id="slack-for-teams">
+                    <h4 class="pricing_card_header">Slack for Teams is a <span class="pricing_card_header_callout">single workspace</span> for your small- to medium-sized company&nbsp;or&nbsp;team.</h4>
+                </div>
+
+                <div class="panel panel_enterprise" id="enterprise-grid">
+                    <h4 class="pricing_card_header">Slack Enterprise Grid powers the design, usage, and administration of <span class="pricing_card_header_callout">multiple interconnected Slack workspaces</span> across your entire company.</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" style="height: 800px">
+            <section class="from_the_wall_of_love">
+                <div class="section_content">
+                    <h3><i class="fa fa-heart-o"></i> From our Wall of Love</h3>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 center-block">
+                                <div class="carousel slide" id="myCarousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                                Lorem ipsum dolor sit amet, mel labores moderatius ex, omnes iriure mea te.
+                                                Est dicta nonumy iriure ex. Etiam recteque persecuti no has, forensibus conclusionemque eu vel.
+                                                Quo simul dicant ridens ei, cu vel cibo suscipiantur. Assum singulis volutpat vis et.
+                                                Ex discere consequuntur pri, tibique intellegam pro id, pri saperet fierent assueverit ad.
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="col-md-4 col-sm-4 col-xs-12"><a href="#"><img src="//unsplash.it/601/300" class="img-responsive"></a></div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                                Lorem ipsum dolor sit amet, mel labores moderatius ex, omnes iriure mea te.
+                                                Est dicta nonumy iriure ex. Etiam recteque persecuti no has, forensibus conclusionemque eu vel.
+                                                Quo simul dicant ridens ei, cu vel cibo suscipiantur. Assum singulis volutpat vis et.
+                                                Ex discere consequuntur pri, tibique intellegam pro id, pri saperet fierent assueverit ad.
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="col-md-4 col-sm-4 col-xs-12"><a href="#"><img src="//unsplash.it/602/300" class="img-responsive"></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider">
+                                        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                                    </div>
+                                    <div class="slider">
+                                        <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<!--Core js-->
+<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/custom.js"></script>
+
+<script src="./bower_components/angular/angular.min.js"></script>
+<script src="./bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="./bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+<script src="./js/app.js"></script>
+
+
+<script type="text/javascript">
+    TS.web.pricing.bindUI();
+    TS.ui.tabs.create($('#tabmenu'), {'default_tab': 'slack-for-teams'});
+</script>
+
+</body>
+</html>

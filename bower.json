@@ -1,0 +1,25 @@
+{
+  "name": "site-pricing",
+  "authors": [
+    "Lucas <lucashen@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "^2.5.0",
+    "angular": "^1.6.4",
+    "bootstrap": "^3.3.7",
+    "components-font-awesome": "^4.7.0",
+    "angular-animate": "^1.6.4",
+    "angular-sanitize": "^1.6.4"
+  }
+}
