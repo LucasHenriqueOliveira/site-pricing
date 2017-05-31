@@ -52,7 +52,7 @@
             </div>
         </div>
 
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" style="height: 800px">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
             <section class="from_the_wall_of_love">
                 <div class="section_content">
                     <h3><i class="fa fa-heart-o"></i> From our Wall of Love</h3>
@@ -98,6 +98,31 @@
                 </div>
             </section>
         </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" style="margin-top: 30px;height: 400px">
+            <div class="container">
+                <div id="more" class="cursor_pointer" data-toggle="collapse" data-target="#about">
+                    <span class="glyphicon glyphicon-plus"></span> View Our Team
+                </div>
+
+                <div id="about" class="collapse">
+                    <div class="row">
+                        <div class="team-member col-md-4 col-sm-4">
+                            <div class="circle"></div>
+                            <h5>copy</h5>
+                        </div>
+                        <div class="team-member col-md-4 col-sm-4">
+                            <div class="circle"></div>
+                            <h5>copy</h5>
+                        </div>
+                        <div class="team-member col-md-4 col-sm-4">
+                            <div class="circle"></div>
+                            <h5>copy</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 </div>
 
@@ -117,6 +142,16 @@
 <script type="text/javascript">
     TS.web.pricing.bindUI();
     TS.ui.tabs.create($('#tabmenu'), {'default_tab': 'slack-for-teams'});
+
+    $('#more').click(function () {
+        if($('div span').hasClass('glyphicon-plus')) {
+            $('#more').html('<span class="glyphicon glyphicon-remove"></span> Close Team');
+        }
+        else {
+            $('#more').html('<span class="glyphicon glyphicon-plus"></span> View Our Team');
+        }
+    });
+
 </script>
 
 </body>

@@ -1781,7 +1781,14 @@
     text-shadow: none;
     font-weight: 600
 }
-
 .intro {
     margin-bottom: 0
+}
+.circle {
+    width: 160px;
+    height: 160px;
+    background: #c3c3c3;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 40px;
 }
